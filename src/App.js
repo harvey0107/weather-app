@@ -18,6 +18,7 @@ function App() {
           />
        </div>
        <div className="location-box">
+            <div className='title'>Harvey's Weather App</div>
             <div className="location">New York</div>
             <div className="date">11/2/2021</div>
         </div>
