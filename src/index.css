@@ -59,12 +59,12 @@ main {
 
 .title{
   color: #FFF;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: 900;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 .location-box .location {
