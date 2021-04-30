@@ -1,11 +1,14 @@
-import logo from './logo.svg';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-     <h1>Hellow Worlds</h1>
-     <p>hi guyss</p>
+    <div className="app">
+     <main>
+       <div className='search-box'>
+
+       </div>
+     </main>
     </div>
   );
 }
