@@ -20,7 +20,11 @@ function App() {
        <div className="location-box">
             <div className="location">New York</div>
             <div className="date">11/2/2021</div>
-          </div>
+        </div>
+        <div className='weather-box'>
+          <div className='temp'>22°C</div>
+          <div className='weather'>Sunny</div>
+        </div>
      </main>
     </div>
   );
