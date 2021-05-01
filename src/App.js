@@ -37,6 +37,7 @@ function App() {
   return (
     <div className="app">
      <main>
+     <div className='title'>WEATHER APP</div>
        <div className='search-box'>
           <input
             type='text'
@@ -46,7 +47,6 @@ function App() {
             value={query}
             onKeyPress={search}
           />
-          <div className='title'>Harvey's Weather App</div>
        </div>
        {(typeof weather.main !='undefined') ? (
          <div>
