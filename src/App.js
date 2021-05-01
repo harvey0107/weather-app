@@ -55,7 +55,7 @@ function App() {
             <div className="date">{dateBuilder(new Date())}</div>
         </div>
         <div className='weather-box'>
-          <div className='temp'>22°C</div>
+          <div className='temp'>{weather.main.temp}</div>
           <div className='weather'>Rain</div>
           </div>
         </div>
