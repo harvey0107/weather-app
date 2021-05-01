@@ -38,6 +38,8 @@ function App() {
             type='text'
             className='search-bar'
             placeholder='Search Place...'
+            onChange={event => event.target.value}
+          
           />
        </div>
        <div className="location-box">
