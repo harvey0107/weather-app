@@ -7,7 +7,8 @@ const api = {
 }
 
 function App() {
-  const [query, setQuery] = useState('')
+  const [query, setQuery] = useState('');
+  const [weather, setWeather] = useState('');
 
   const dateBuilder = (d) => {
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
