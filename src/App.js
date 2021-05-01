@@ -16,7 +16,7 @@ function App() {
       .then(result => {
         setWeather(result);
         setQuery('');
-        console.log(weather);
+        console.log(result);
       })
     }
   }
@@ -47,15 +47,19 @@ function App() {
             onKeyPress={search}
           />
        </div>
+       {(typeof weather.main !='undefined') ? (
+         <div>
        <div className="location-box">
             <div className='title'>Harvey's Weather App</div>
-            <div className="location">New York</div>
+            <div className="location">{weather.name}, {weather.sys.country}</div>
             <div className="date">{dateBuilder(new Date())}</div>
         </div>
         <div className='weather-box'>
           <div className='temp'>22°C</div>
           <div className='weather'>Rain</div>
+          </div>
         </div>
+       ): ('')}
      </main>
     </div>
   );
