@@ -11,7 +11,9 @@ function App() {
   const [weather, setWeather] = useState({});
   const search = input => {
     if(input.key==='Enter'){
-      fetch(`${api.base}`)
+      fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
+      .then(res => res.json())
+      .then(result => setWeather(result))
     }
   }
 
