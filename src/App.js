@@ -8,7 +8,12 @@ const api = {
 
 function App() {
   const [query, setQuery] = useState('');
-  const [weather, setWeather] = useState('');
+  const [weather, setWeather] = useState({});
+  const search = input => {
+    if(input.key==='Enter'){
+      fetch(`${api.base}`)
+    }
+  }
 
   const dateBuilder = (d) => {
     let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
